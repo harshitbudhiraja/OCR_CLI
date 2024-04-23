@@ -24,12 +24,12 @@ This is a cli utility, which provides functionality for Optical Character Recogn
 
 1: Clone the repository:
 ``` bash
-git clone https://github.com/your-username/ocr_cli.git
+git clone https://github.com/harshitbudhiraja/OCR_CLI.git
 ```
 
 2: Navigate to the repository directory:
 ``` bash
-cd ocr_cli
+cd OCR_CLI
 ```
 
 3: Add virtual environment 

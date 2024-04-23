@@ -1,20 +1,25 @@
 import argparse
 from utils import *
 from lipikar_ocr import *
-
+from gcv_ocr import *
 
 
 def main():
+
     '''Entry point for OCR task.
     
     ARGS:
     --engine : To choose an engine name between Lipikar and Google Cloud Vision API
+    Options: lipikar , gcv
 
     RETURNS:
-    uploadDetails.json and Detections.json saved 
+    uploadDetails.json: A JSON file containing details of the upload process.
+    
+    Detections.json: A JSON file containing the results of the OCR detection process, such as recognized text, bounding boxes..
 
 
     '''
+
     parser = argparse.ArgumentParser(description="Perform OCR using Google Cloud Vision or Lipikar")
     parser.add_argument("--engine", choices=["google", "lipikar"],  help="OCR engine to use (default: google)")
     args = parser.parse_args()
@@ -22,13 +27,11 @@ def main():
     print(dashes+"Welcome to the OCR CLI tool!"+dashes)
 
     image_path = get_image_path()
-    # image_path = '1.pdf'
 
 
     if args.engine == "gcv" or args.engine == "lipikar":
         engine = args.engine
     else:
-        # engine = "lipikar"
         engine = get_ocr_engine()
 
 
@@ -36,11 +39,9 @@ def main():
         lipikar_ocr(image_path)
         
     elif engine == "gcv":
-        print("google cloud vision selected")
+        gcloud_ocr(image_path)
     else :
         return
-
-    print("engine: ", engine)
 
 
 if __name__ == "__main__":
