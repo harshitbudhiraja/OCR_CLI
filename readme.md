@@ -12,7 +12,7 @@
 
 ## About: <a name = "context"></a>
 <p align="center">
-This is a cli utility, which provides functionality for Optical Character Recognition (OCR) tasks on .jpg and .pdf files. Users can choose between `Google Cloud Vision's OCR API` (GCP) or `Lipikar (IITD Internal)` for OCR processing.
+This is a cli utility, which provides functionality for Optical Character Recognition (OCR) tasks on .jpg and .pdf files. Users can choose between Google Cloud Vision's OCR API (GCP) or Lipikar (IITD Internal) for OCR processing.
 <br>
 </p>
 
@@ -32,19 +32,27 @@ git clone https://github.com/your-username/ocr_cli.git
 cd ocr_cli
 ```
 
+3: Add virtual environment 
+``` bash
+python3 -m venv venv
+```
 
-3: Install dependencies:
+4: Activate the virtual environment
+``` bash
+source venv/bin/activate
+```
+
+5: Install dependencies:
 ``` bash
 pip install -r requirements.txt
 ```
 
-
-4: Run the CLI utility:
+6: Run the CLI utility:
 ``` bash
 python main.py
 ```
 
-5: Run the CLI utility with particular OCR Engine: (Lipikar/Google Cloud Vision): 
+7: Run the CLI utility with particular OCR Engine: (Lipikar/Google Cloud Vision): 
 ``` bash
 python main.py --engine lipikar 
 python main.py --engine gcv 
@@ -94,3 +102,4 @@ WIP
 
 ## ✍️ Authors <a name = "authors"></a>
 [Harshit Budhiraja](https://github.com/harshitbudhiraja)
+
