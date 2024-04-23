@@ -1,0 +1,8 @@
+/venv
+.env
+/__pycache__
+poc.py
+detections.json
+uploadDetails.json
+*.pdf
+*.jpg
