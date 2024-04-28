@@ -1,0 +1,15 @@
+{
+    "success": true,
+    "result": {
+        "upload": {
+            "id": 160,
+            "created_at": "2024-04-22T18:46:20.139349Z",
+            "filename": "ocr-handwritten.jpg",
+            "detection_ids": "[1843]",
+            "processing_status": "{\"statusCode\": 5, \"statusString\": \"\", \"pagesProgress\": \"\", \"bboxesProgress\": \"\"}",
+            "is_cancelled": false,
+            "upload_type": "original",
+            "user": 25
+        }
+    }
+}

@@ -8,7 +8,8 @@ def get_ocr_engine():
         Record the select OCR engine selected by user
         1: Google Cloud Vision
         2: Lipikar API [IITD]
-        3: Exit
+        3. Restart Upload
+        4: Exit
     Returns:
     String corresponding the selected choice.
     '''
@@ -16,17 +17,21 @@ def get_ocr_engine():
     print("\nChoose OCR engine:")
     print("1. Google Cloud Vision")
     print("2. Lipikar")
-    print("3. Exit")
-    engine_choice = input("Enter your choice (1 or 2): ")
+    print("3. Restart Upload")
+    print("4. Exit\n")
+    engine_choice = input("Enter your choice (1/2/3/4): ")
 
     if engine_choice == "1":
+        print("\nGoogle Cloud Vision selected!")
         return "google"
     elif engine_choice == "2":
         return "lipikar"
     elif engine_choice == "3":
+        return "restart"
+    elif engine_choice == "4":
         return ""
     else:
-        print(dashes+"Invalid choice. Please enter 1 or 2."+dashes)
+        print(dashes+"Invalid choice. Please enter (1/2/3/4)."+dashes)
         return get_ocr_engine()
 
 

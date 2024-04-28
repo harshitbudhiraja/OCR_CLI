@@ -1,0 +1,194 @@
+{
+    "success": true,
+    "result": {
+        "config": {
+            "document_parsers": [
+                {
+                    "id": "tess_line_level",
+                    "modelId": "tess_line_level",
+                    "displayName": "Line-Level (Tess)",
+                    "detectionLevel": "line"
+                },
+                {
+                    "id": "tess_word_level",
+                    "modelId": "tess_word_level",
+                    "displayName": "Word-Level (Tess)",
+                    "detectionLevel": "word"
+                },
+                {
+                    "id": "kraken_line_level",
+                    "modelId": "kraken_line_level",
+                    "displayName": "Line-Level (Kraken)",
+                    "detectionLevel": "line"
+                },
+                {
+                    "id": "kraken_plus_tess_word_level",
+                    "modelId": "kraken_plus_tess_word_level",
+                    "displayName": "Word-Level (Kraken + Tess)",
+                    "detectionLevel": "word"
+                }
+            ],
+            "text_recognizers": [
+                {
+                    "modelId": "telugu_iitd",
+                    "displayName": "Telugu (IITD)",
+                    "language": [
+                        "telugu"
+                    ],
+                    "detectionLevel": [
+                        "word"
+                    ],
+                    "modality": [
+                        "printed"
+                    ]
+                },
+                {
+                    "modelId": "hindi_iitd",
+                    "displayName": "Hindi (IITD)",
+                    "language": [
+                        "hindi"
+                    ],
+                    "detectionLevel": [
+                        "word"
+                    ],
+                    "modality": [
+                        "printed"
+                    ]
+                },
+                {
+                    "modelId": "urdu_iitd",
+                    "displayName": "Urdu (IITD)",
+                    "language": [
+                        "urdu"
+                    ],
+                    "detectionLevel": [
+                        "line"
+                    ],
+                    "modality": [
+                        "printed"
+                    ]
+                },
+                {
+                    "modelId": "oriya_iitd",
+                    "displayName": "Oriya (IITD)",
+                    "language": [
+                        "oriya"
+                    ],
+                    "detectionLevel": [
+                        "word"
+                    ],
+                    "modality": [
+                        "printed"
+                    ]
+                },
+                {
+                    "modelId": "english_iitd",
+                    "displayName": "English (IITD)",
+                    "language": [
+                        "english"
+                    ],
+                    "detectionLevel": [
+                        "word"
+                    ],
+                    "modality": [
+                        "printed"
+                    ]
+                },
+                {
+                    "modelId": "manipuri_meitei_iitd",
+                    "displayName": "Manipuri (Meitei) (IITD)",
+                    "language": [
+                        "manipuri_meitei"
+                    ],
+                    "detectionLevel": [
+                        "word"
+                    ],
+                    "modality": [
+                        "printed"
+                    ]
+                },
+                {
+                    "modelId": "punjabi_iitd",
+                    "displayName": "Punjabi (IITD)",
+                    "language": [
+                        "punjabi"
+                    ],
+                    "detectionLevel": [
+                        "word"
+                    ],
+                    "modality": [
+                        "printed"
+                    ]
+                },
+                {
+                    "modelId": "gujarati_iitd",
+                    "displayName": "Gujarati (IITD)",
+                    "language": [
+                        "gujarati"
+                    ],
+                    "detectionLevel": [
+                        "word"
+                    ],
+                    "modality": [
+                        "printed"
+                    ]
+                },
+                {
+                    "modelId": "santali_ol_chiki_iitd",
+                    "displayName": "Santali (Ol Chiki) (IITD)",
+                    "language": [
+                        "santali_ol_chiki"
+                    ],
+                    "detectionLevel": [
+                        "word"
+                    ],
+                    "modality": [
+                        "printed"
+                    ]
+                },
+                {
+                    "modelId": "bengali_iitd",
+                    "displayName": "Bengali (IITD)",
+                    "language": [
+                        "bengali"
+                    ],
+                    "detectionLevel": [
+                        "word"
+                    ],
+                    "modality": [
+                        "printed"
+                    ]
+                },
+                {
+                    "modelId": "tamil_iitd",
+                    "displayName": "Tamil (IITD)",
+                    "language": [
+                        "tamil"
+                    ],
+                    "detectionLevel": [
+                        "word"
+                    ],
+                    "modality": [
+                        "printed"
+                    ]
+                }
+            ],
+            "transliteration": {
+                "supportedLanguages": [
+                    "assamese",
+                    "bengali",
+                    "urdu",
+                    "telugu",
+                    "gujarati",
+                    "punjabi",
+                    "oriya",
+                    "tamil",
+                    "malayalam",
+                    "english",
+                    "hindi",
+                    "kannada"
+                ]
+            }
+        }
+    }
+}

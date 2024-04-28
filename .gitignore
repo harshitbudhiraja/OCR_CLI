@@ -6,3 +6,4 @@ detections.json
 uploadDetails.json
 *.pdf
 *.jpg
+service_account.json
