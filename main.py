@@ -27,7 +27,6 @@ def main():
     print(dashes+"Welcome to the OCR CLI tool!"+dashes)
 
     image_path = get_image_path()
-    # image_path = '1.pdf'
 
     if args.engine == "gcv" or args.engine == "lipikar":
         engine = args.engine
