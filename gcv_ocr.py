@@ -1,5 +1,6 @@
 from google.cloud import vision
 from google.cloud.vision_v1 import types
+import json
 dashes = '\n----------------------------------------\n'
 
 
@@ -8,6 +9,7 @@ try:
     client = vision.ImageAnnotatorClient.from_service_account_json('service_account.json')
 except:
     print("Problem encountered with the service account credentials, Please check the file")
+
 
 
 def detected_text(image_path,language='English'):
@@ -33,7 +35,7 @@ def detected_text(image_path,language='English'):
     dummy_responses = {
     'label_annotations':
     {
-        'English':
+    'English':
     [
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
         "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
@@ -74,6 +76,8 @@ def detected_text(image_path,language='English'):
 
     return labels
 
+
+
 def get_language():
 
     print("\nChoose an language to perform OCR:")
@@ -100,7 +104,12 @@ def get_language():
 
     return get_language()
 
+
+
 def perform_ocr(image_path):
+    """
+        Performs OCR on the given image and gets the contents saved to a file detections.json
+    """
 
     language = get_language()
 
@@ -111,6 +120,9 @@ def perform_ocr(image_path):
     print("\n")
     for label in ocr_inference:
         print("-",label,"\n")
+    
+    save_to_file(ocr_inference,'detections.json')
+
 
 
 def list_languages():
@@ -120,6 +132,7 @@ def list_languages():
     Returns:
         list: A list of tuples containing language names and their corresponding language codes.
     """
+
     language_list = [
         ("1","English", "en"),
         ("2","Hindi", "hi"),
@@ -133,6 +146,21 @@ def list_languages():
         print(f"{itr}. {language} ({code}) ")
     return language_list
     
+
+
+def save_to_file(json_content,file_path):
+    """
+    Save the JSON content to a file.
+
+    Args:
+        json_content (dict): The JSON content to be saved.
+        file_path (str): The path to the file where JSON content will be saved.
+    """
+    
+    with open(file_path, 'w') as json_file:
+        json.dump(json_content, json_file)
+
+
 
 def gcloud_ocr(image_path):
 
