@@ -83,6 +83,17 @@ A set of APIs is running at http://lipikar.apps.iitd.ac.in/api
 Note: For URDU, there are only `Line Level Parsers`.
 Upon completion, the upload details and OCR detections are stored in uploadDetails.json and detections.json respectively.
 
+[Google Cloud Vision](https://cloud.google.com/vision?hl=en)
+
+For Google Cloud Vision, the user needs to obtain their service account credentials and attach them to the repository. After successful authentication, the user can use the GCV as their OCR engine. 
+The detections are subsequently stored in a detections.json file.
+
+As of now, the system only has support for following languages:
+
+1. English (en)
+2. Hindi (hi)
+3. Punjabi (pa)
+4. Bengali (bn)
 
 
 ## Error Handling <a name = "error_handling"></a>
