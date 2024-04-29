@@ -12,11 +12,10 @@ def main():
     --engine : To choose an engine name between Lipikar and Google Cloud Vision API
     Options: lipikar , gcv
 
-    RETURNS:
-    uploadDetails.json: A JSON file containing details of the upload process.
-    
+    Upon Upload:
     Detections.json: A JSON file containing the results of the OCR detection process, such as recognized text, bounding boxes..
 
+    uploadDetails.json: A JSON file containing details of the upload process. ( only for Lipikar )
 
     '''
 
